@@ -1,5 +1,8 @@
 # ChatGPT开源ROS软件包
 
+## 项目网址
+https://github.com/play-with-chatgpt/wpr_chatgpt/
+
 ## 使用步骤
 
 1.  获取源码:
@@ -31,10 +34,10 @@ rosrun wpr_chatgpt str_pub.py 你好
 视频网址：https://www.bilibili.com/video/BV1we4y1w73g
 
 ## ROS快速入门视频课
-![视频地址二维码](./media/ros1_course.png)
 视频网址：https://www.bilibili.com/video/BV1BP4y1o7pw
+![视频地址二维码](./media/ros1_course.png)
 
-## 以下是广告
+## 声明：以下是广告
 [北京六部工坊科技有限公司](http://www.6-robot.com)是一家专门为高校提供机器人专业课程建设方案的公司，可以为学校用户提供从底层硬件开发到上层算法应用，一整套软硬件教学方案。除了提供教案教材参考资料，六部工坊还提供一系列机器人教学实验产品。协助高校客户完成机器人教学体系的升级和建设。详细信息请访问官方网址：http://www.6-robot.com
 
 ### 1. 启智模块机器人套件
