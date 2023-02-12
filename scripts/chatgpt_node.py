@@ -13,9 +13,9 @@ def cbQuestion(msg):
 
     global api_key
     openai.api_key = api_key
-    model_engine = "davinci-instruct-beta-v3"
     prompt = msg.data
 
+    global model_engine
     completion = openai.Completion.create(
         engine = model_engine,
         prompt = prompt,
@@ -44,6 +44,9 @@ if __name__ == "__main__":
 
     #读取 API Key 参数
     api_key =  rospy.get_param('~openai/api_key')
+    model_engine =  rospy.get_param('~openai/model' , "davinci-instruct-beta-v3")
+
+    rospy.logwarn("GPT: 当前使用模型 %s",model_engine)
 
     # 订阅外部输入的问话
     question_sub = rospy.Subscriber("/wpr_ask", String, cbQuestion, queue_size=1)
@@ -51,5 +54,5 @@ if __name__ == "__main__":
     # 发布ChatGPT返回的结果
     response_pub = rospy.Publisher("/chatspt_answer", String, queue_size=1)
 
-    rospy.logwarn("ChatGPT: 我已经准备好了！向我提问吧 ^_^")
+    rospy.logwarn("GPT: 我已经准备好了！向我提问吧 ^_^")
     rospy.spin()
