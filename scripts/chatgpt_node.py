@@ -18,7 +18,7 @@ def cbQuestion(msg):
     else:
         msg_log = [{"role": "user", "content": msg.data}]
 
-    print(msg_log)
+    # print(msg_log)
 
     global model_engine
     completion = openai.ChatCompletion.create(
