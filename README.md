@@ -22,6 +22,11 @@ catkin_make
 ```
 4. 将OpenAI的API Key填写到wpr_chatgpt/config/api_key.yaml中。
 5. 启动ChatGPT节点
+ChatGPT接口：
+```
+roslaunch wpr_chatgpt chat.launch
+```
+GPT-3接口：
 ```
 roslaunch wpr_chatgpt start.launch
 ```
