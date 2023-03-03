@@ -1,5 +1,6 @@
 openai:
-  model: davinci-instruct-beta-v3
+  conversation: False
+  model: gpt-3.5-turbo
 
   # 可使用的模型：
   # davinci-instruct-beta-v3

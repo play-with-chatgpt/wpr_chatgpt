@@ -1,6 +1,6 @@
 <launch>
 
-    <node  pkg="wpr_chatgpt" type="gpt3_node.py"  name="gpt3_node" output="screen">
+    <node  pkg="wpr_chatgpt" type="chatgpt_node.py"  name="chatgpt_node" output="screen">
         <rosparam file="$(find wpr_chatgpt)/config/api_key.yaml" command="load" />
         <rosparam file="$(find wpr_chatgpt)/config/model.yaml" command="load" />
     </node>
